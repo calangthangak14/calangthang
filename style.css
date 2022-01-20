@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:regular,italic,700,700italic);
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+}
+body {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        .background{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://raw.githubusercontent.com/calangthang1406/pic/main/1af689d42bdb7686df444f22925f9e89.gif');
+        -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+        }
+        .idcard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 650px;
+        background-color: red;
+        border-radius: 3%;
+        overflow: hidden;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+        background:#EEEEEE;
+         animation: anim 1.5s normal forwards;
+        }
+        .idcard div:first-child {
+        width: 100%;
+        height: 100%;
+        background-image: url(https://raw.githubusercontent.com/calangthang1406/pic/main/c4nh2xS.jpeg);
+        background-size: 100% auto;
+        }
+        .idcard div:nth-child(2) {
+        position: absolute;
+        top: 30%;
+        left: calc(50% - 60px);
+        width: 120px;
+        height: 120px;
+        border-radius: 30%;
+        border: 2px solid white;
+        background-image: url(https://raw.githubusercontent.com/calangthang1406/pic/main/cat.jpg);
+        background-size: 110% auto;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        }
+        .idcard div:nth-child(3){
+        position: absolute;
+        top: 330px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-family: 'Karla';
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 700;
+        color: rgb(247, 247, 247);
+        }
+        .idcard div:nth-child(3) span {
+        display: block;
+        font-weight: 300;
+        font-size: 20px;
+        color:rgb(242, 246, 248);
+        text-shadow: none;
+        }
+        .cardsocial {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: transparent;
+        text-align: center;
+        overflow: hidden;
+        }
+        .cardsocial a {
+        color: white;
+        }
+        .cardsocial li img {
+        height: 46px;
+        width: auto;
+        transition: .2s linear;
+        }
+        .cardsocial li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        height: 70px;
+        width: 20%;
+        font-size: 40px;
+        }
+        .cardsocial li i {
+        vertical-align: middle;
+        }
+        .cardsocial li:first-child {
+        background-color: #CC181E;
+        }
+        .cardsocial li:nth-child(2) {
+        background-color: #3b5998;
+        }
+        .cardsocial li:nth-child(3) {
+        background-color: #e40f67;
+        }
+        .cardsocial li:nth-child(4) {
+        background-color: #2B3137;
+        }
+        .cardsocial li:nth-child(5) {
+        background-color: #eb7526;
+        }
+        .cardsocial li:hover {
+        font-size: 50px;
+        }
+        .cardsocial li:hover img {
+        transform: scale(1.15) translate(-41%, -41%);
+        }
+        .cardsocial li i, .cardsocial li img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .2s linear;
+        }
+@keyframes anim {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
